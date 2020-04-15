@@ -1,12 +1,15 @@
 import Navbar from './navbar';
 import FooterBar from './footerBar';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
+import { withTranslation } from '../i18n';
 
-export default function Layout({ children }) {
+const Layout = (props) => {
     return (
         <div>
             <Head>
-                <title>Aviculture Association of Kerala</title>
+                <title>{props.t('title')}</title>
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
 
                 <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
                 <link href="/static/vendor/icofont/icofont.min.css" rel="stylesheet" />
@@ -20,9 +23,19 @@ export default function Layout({ children }) {
             </Head>
             <Navbar />
             <main id="main">
-                {children}
+                {props.children}
             </main>
             <FooterBar />
         </div>
     );
 }
+
+Layout.getInitialProps = async () => ({
+    namespacesRequired: ['layout']
+})
+
+Layout.propTypes = {
+    t: PropTypes.func.isRequired
+}
+
+export default withTranslation('layout')(Layout);

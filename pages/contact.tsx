@@ -13,41 +13,26 @@ const Contact = ({ t }) => {
                     </div>
 
                     <div className="row">
-
-                        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                            <div className="contact-about">
-                                <h3>Vesperr</h3>
-                                <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                                <div className="social-links">
-                                    <a href="#" className="twitter"><i className="icofont-twitter"></i></a>
-                                    <a href="#" className="facebook"><i className="icofont-facebook"></i></a>
-                                    <a href="#" className="instagram"><i className="icofont-instagram"></i></a>
-                                    <a href="#" className="linkedin"><i className="icofont-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                            <div className="info">
-                                <div>
+                        <div className="col-lg-5 col-md-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                            <div>
+                                <div className="info" title="Headquarters">
                                     <i className="ri-map-pin-line"></i>
-                                    <p>A108 Adam Street<br />New York, NY 535022</p>
+                                    <p>Chittoor Rd, Ayyappankavu,<br />
+                                        Ernakulam, Kerala 682018</p>
                                 </div>
-
-                                <div>
-                                    <i className="ri-mail-send-line"></i>
-                                    <p>info@example.com</p>
+                                <div className="contact-about">
+                                    <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                                    <div className="social-links" data-aos="fade-up" data-aos-delay="100">
+                                        <a href="#" className="facebook"><i className="icofont-whatsapp"></i></a>
+                                        <a href="#" className="facebook"><i className="icofont-telegram"></i></a>
+                                        <a href="#" className="facebook"><i className="icofont-facebook"></i></a>
+                                        <a href="#" className="instagram"><i className="icofont-instagram"></i></a>
+                                    </div>
                                 </div>
-
-                                <div>
-                                    <i className="ri-phone-line"></i>
-                                    <p>+1 5589 55488 55s</p>
-                                </div>
-
                             </div>
                         </div>
 
-                        <div className="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                        <div className="col-lg-7 col-md-8" data-aos="fade-up" data-aos-delay="300">
                             <form action="forms/contact.php" method="post" role="form" className="php-email-form">
                                 <div className="form-group">
                                     <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

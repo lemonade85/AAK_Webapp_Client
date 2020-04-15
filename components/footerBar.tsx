@@ -15,22 +15,22 @@ const FooterBar = ({ t }) => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-2 col-md-4 col-6">
-                                <img src="/static/img/sponsors/sp-1.png" className="img-fluid" alt="" data-aos="zoom-in" />
+                                <img src="/static/img/sponsors/m1.jpg" title="Avigene" className="img-fluid" alt="" data-aos="zoom-in" />
                             </div>
                             <div className="col-lg-2 col-md-4 col-6">
-                                <img src="/static/img/sponsors/sp-2.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" />
+                                <img src="/static/img/sponsors/m2.jpg" title="Beaks International" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100" />
                             </div>
                             <div className="col-lg-2 col-md-4 col-6">
-                                <img src="/static/img/sponsors/sp-3.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200" />
+                                <img src="/static/img/sponsors/m3.jpg" title="Agonistics" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200" />
                             </div>
                             <div className="col-lg-2 col-md-4 col-6">
-                                <img src="/static/img/sponsors/sp-4.png" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300" />
+                                <img src="/static/img/sponsors/m4.jpg" title="Petco" className="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300" />
                             </div>
                         </div>
                     </div>
                 </section>
             </footer>
-        </div>
+        </div >
     );
 }
 

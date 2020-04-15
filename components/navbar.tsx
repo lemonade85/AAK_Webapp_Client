@@ -14,8 +14,7 @@ const Navbar = ({ t }) => {
                 <div className="container-fluid d-flex align-items-center">
 
                     <div className="logo mr-auto">
-                        <h1 className="text-light"><a href="#"><span>AAK</span></a></h1>
-                        <a href="#"><span>{t('title')}</span></a>
+                        <a href="index.html"><img src="./static/img/logo.png" title={t('title')} alt="" className="logo img-fluid" /></a>
                     </div>
                     <nav className="nav-menu d-none d-lg-block">
                         <ul>
