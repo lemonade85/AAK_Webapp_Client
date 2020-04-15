@@ -7,18 +7,21 @@
   "author": "Lenins George <lenins.george@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon server.js --watch",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "^9.3.4",
+    "express": "^4.17.1",
+    "next": "^9.3.5",
+    "next-i18next": "^4.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@types/node": "^13.11.1",
     "@types/react": "^16.9.34",
+    "nodemon": "^2.0.3",
     "typescript": "^3.8.3"
   }
 }

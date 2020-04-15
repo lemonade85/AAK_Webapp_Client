@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+# Sponsors
+--------------------------------------------------------------*/
+.sponsors {
+    background: #f3f9fd;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .sponsors .col-lg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sponsors img {
+    width: 50%;
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 10px 0;
+  }
+  
+  .sponsors img:hover {
+    -webkit-filter: none;
+    filter: none;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .sponsors img {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .sponsors img {
+      width: 30%;
+    }
+  }
+  

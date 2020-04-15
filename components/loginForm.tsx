@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import PropTypes from 'prop-types';
+import { withTranslation } from '../i18n';
 
-export default function LoginForm() {
+const LoginForm = ({ t }) => {
     return (
         <div>
             <Head>
@@ -36,3 +38,12 @@ export default function LoginForm() {
         </div>
     );
 }
+LoginForm.getInitialProps = async () => ({
+    namespacesRequired: ['loginform'],
+});
+
+LoginForm.propTypes = {
+    t: PropTypes.func.isRequired,
+}
+
+export default withTranslation('loginform')(LoginForm);
