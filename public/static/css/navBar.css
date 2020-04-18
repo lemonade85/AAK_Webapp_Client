@@ -1,6 +1,14 @@
 .logo {
   filter: grayscale(.3) drop-shadow(2px 4px 6px grey);
 }
+
+#header #langBtn {
+  border-radius: 10px;
+  color: #3498db;
+  font-weight: 700;
+  border: 1px solid #3498db;
+  margin-right: auto;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -33,16 +41,15 @@
 }
 
 .nav-menu .get-started a {
-  background: #3498db;
-  color: #fff;
+  color: #3498db;
+  border: 1px solid #3498db;
   border-radius: 50px;
   margin: 0 0 0 30px;
   padding: 10px 25px;
 }
 
 .nav-menu .get-started a:hover {
-  background: #57aae1;
-  color: #fff;
+  color: #c091ff;
 }
 
 .nav-menu .drop-down ul {
@@ -184,8 +191,8 @@
 }
 
 .mobile-nav .get-started a {
-  background: #3498db;
-  color: #fff;
+  color: #3498db;
+  border: 1px solid #3498db;
   border-radius: 50px;
   margin: 0 15px;
   padding: 10px 30px;
@@ -193,8 +200,7 @@
 }
 
 .mobile-nav .get-started a:hover {
-  background: #57aae1;
-  color: #fff;
+  color: #c091ff;
 }
 
 .mobile-nav .drop-down > a:after {

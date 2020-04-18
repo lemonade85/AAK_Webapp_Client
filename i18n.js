@@ -1,6 +1,10 @@
 const NextI18Next = require('next-i18next').default;
 
 module.exports = new NextI18Next({
-    defaultLanguage: 'ml',
-    otherLanguages: ['en']
+    defaultLanguage: 'en',
+    otherLanguages: ['ml'],
+    localeSubpaths: {
+        en: 'en',
+        ml: 'ml'
+    }
 });

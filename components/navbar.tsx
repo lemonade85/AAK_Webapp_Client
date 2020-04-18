@@ -1,10 +1,14 @@
-import Link from 'next/link';
 import LoginForm from './loginForm';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
-import { withTranslation } from '../i18n';
+import { i18n, Link, withTranslation } from '../i18n';
+import { useRouter } from 'next/router';
 
+function chooseLang(params: any) {
+    i18n.changeLanguage(i18n.language === 'en' ? 'ml' : 'en');
+}
 const Navbar = ({ t }) => {
+    const router = useRouter();
     return (
         <div>
             <Head>
@@ -12,20 +16,19 @@ const Navbar = ({ t }) => {
             </Head>
             <header id="header" className="fixed-top d-flex align-items-center">
                 <div className="container-fluid d-flex align-items-center">
-
                     <div className="logo mr-auto">
-                        <a href="index.html"><img src="./static/img/logo.png" title={t('title')} alt="" className="logo img-fluid" /></a>
+                        <a href="/about"><img src="./static/img/logo.png" title={t('title')} alt="AAK" className="logo img-fluid" /></a>
                     </div>
+                    <button id="langBtn" className="btn btn-sm" onClick={chooseLang} title={t('lang-button-title')}>EN/ML</button>
                     <nav className="nav-menu d-none d-lg-block">
                         <ul>
-                            <li className="active"><Link href=""><a><span className="icofont-home"> Home</span></a></Link></li>
-                            <li><Link href="/about"><a>About</a></Link></li>
-                            <li><a href="">Portfolio</a></li>
-                            <li><a href="">Classifieds</a></li>
-                            <li><a href="/contact">Contact</a></li>
-
+                            <li className={(router.pathname === '/') ? 'active' : ''}><Link href="/"><a><span className="icofont-home"> Home</span></a></Link></li>
+                            <li className={(router.pathname === '/faq') ? 'active' : ''}><Link href="/faq"><a>FAQ</a></Link></li>
+                            <li className={(router.pathname === '/classifieds') ? 'active' : ''}><Link href="/classifieds"><a>Classifieds</a></Link></li>
+                            <li className={(router.pathname === '/contact') ? 'active' : ''}><Link href="/contact"><a>Contact</a></Link></li>
+                            <li className={(router.pathname === '/about') ? 'active' : ''}><Link href="/about"><a>About</a></Link></li>
                             <li className="get-started dropdown">
-                                <a href="#" className="dropdown-toggle" data-toggle="dropdown"><b>Login/Join</b> <span className="caret"></span></a>
+                                <a className="dropdown-toggle" data-toggle="dropdown"><b>Login / Join</b> <span className="caret"></span></a>
                                 <LoginForm />
                             </li>
                         </ul>
@@ -37,11 +40,11 @@ const Navbar = ({ t }) => {
 }
 
 Navbar.getInitialProps = async () => ({
-    namespacesRequired: ['navbar'],
+    namespacesRequired: ['navbar']
 })
 
 Navbar.propTypes = {
-    t: PropTypes.func.isRequired,
+    t: PropTypes.func.isRequired
 }
 
 export default withTranslation('navbar')(Navbar)
