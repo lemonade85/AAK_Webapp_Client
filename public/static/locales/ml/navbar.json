@@ -1,4 +1,10 @@
 {
-    "title": "കേരള അവിക്കൾച്ചർ അസോസിയേഷൻ",
-    "lang-button-title": "ഭാഷ മാറ്റുക"
+    "logo-title": "കേരള അവിക്കൾച്ചർ അസോസിയേഷൻ",
+    "lang-button-title": "ഭാഷ മാറ്റുക",
+    "link-home": "ഹോംപേജ്",
+    "link-faq": "പൊതു ചോദ്യങ്ങൾ",
+    "link-classifides": "പരസ്യങ്ങൾ",
+    "link-about": "ഞങ്ങളെ കുറിച്ച്",
+    "link-contact": "ഔദ്യോഗിക അന്വേഷണങ്ങൾ",
+    "login-join-btn": "ലോഗിൻ / ചേരാൻ"
 }

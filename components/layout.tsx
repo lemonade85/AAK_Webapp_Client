@@ -6,10 +6,10 @@ import { withTranslation } from '../i18n';
 
 const Layout = (props) => {
     return (
-        <div>
+        <div style={{ paddingTop: '5%' }}>
             <Head>
                 <title>{props.t('title')}</title>
-                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=Manjari|Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
 
                 <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
                 <link href="/static/vendor/icofont/icofont.min.css" rel="stylesheet" />

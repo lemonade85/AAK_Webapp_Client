@@ -1,4 +1,10 @@
 {
-    "title": "Aviculture Association of Kerala",
-    "lang-button-title": "Language toggle"
+    "logo-title": "Aviculture Association of Kerala",
+    "lang-button-title": "Language toggle",
+    "link-home": "Home Page",
+    "link-faq": "Frequently asked questions",
+    "link-classifides": "For sale posts",
+    "link-about": "About Us",
+    "link-contact": "Contact Us",
+    "login-join-btn": "Login popup toggle"
 }
